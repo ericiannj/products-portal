@@ -57,19 +57,6 @@ const EditionModal: React.FC = () => {
                             })
                         }
                     />
-                    <InputStructure
-                        label="Product Name"
-                        value={editedProduct.code}
-                        onChange={e => {
-                            const categoryValue = e.target.value
-                            setEditedProduct((prevState: Product) => {
-                                return {
-                                    ...prevState,
-                                    category: categoryValue,
-                                }
-                            })
-                        }}
-                    />
                     <SelectorStructure
                         label="Product Category"
                         onChange={e => {
