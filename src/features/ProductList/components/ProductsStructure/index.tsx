@@ -22,11 +22,11 @@ const ProductsStructure: React.FC = () => {
         <>
             <ProductsContainer>
                 <ProductsHeaderContainer>
-                    <Header placeholder="Lista de produtos" />
+                    <Header placeholder="Products List" />
                     <NavLink
                         icon={FormIcon}
                         to="/"
-                        linkName="Voltar para Cadastro de Produtos"
+                        linkName="Return to register product"
                     />
                 </ProductsHeaderContainer>
                 <ProductsListContainer>
@@ -46,7 +46,7 @@ const ProductsStructure: React.FC = () => {
                                           '...'
                                         : product.supplier
                                 }
-                                price={'R$ ' + product.price}
+                                price={'$ ' + product.price}
                                 code={product.code}
                                 onClick={() => removeProduct(product!)}
                                 onOpenModal={() => openModal(product!)}

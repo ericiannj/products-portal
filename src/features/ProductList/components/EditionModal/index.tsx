@@ -47,9 +47,9 @@ const EditionModal: React.FC = () => {
                     <CloseIcon src={CloseIc} />
                 </Closeutton>
                 <ModalContainer>
-                    <Header placeholder="Atualizar Produto" />
+                    <Header placeholder="Update Product" />
                     <InputStructure
-                        label="Nome do Produto"
+                        label="Product Name"
                         value={editedProduct.name}
                         onChange={e =>
                             setEditedProduct((prevState: Product) => {
@@ -58,7 +58,7 @@ const EditionModal: React.FC = () => {
                         }
                     />
                     <InputStructure
-                        label="Código do Produto"
+                        label="Product Name"
                         value={editedProduct.code}
                         onChange={e => {
                             const categoryValue = e.target.value
@@ -71,7 +71,7 @@ const EditionModal: React.FC = () => {
                         }}
                     />
                     <SelectorStructure
-                        label="Categoria do Produto"
+                        label="Product Category"
                         onChange={e => {
                             const categoryValue = e.target.value
                             setEditedProduct((prevState: Product) => {
@@ -83,7 +83,7 @@ const EditionModal: React.FC = () => {
                         }}
                     />
                     <InputStructure
-                        label="Nome do Fornecedor"
+                        label="Product Supplier"
                         value={editedProduct.supplier}
                         onChange={e =>
                             setEditedProduct((prevState: Product) => {
@@ -95,7 +95,7 @@ const EditionModal: React.FC = () => {
                         }
                     />
                     <InputStructure
-                        label="Preço"
+                        label="Price"
                         value={editedProduct.price}
                         onChange={e =>
                             setEditedProduct((prevState: Product) => {
@@ -104,7 +104,7 @@ const EditionModal: React.FC = () => {
                         }
                     />
                     <DefaultButton
-                        content="Cadastrar"
+                        content="Register"
                         onClick={submitProduct}
                         disabled={
                             editedProduct.name == '' ||

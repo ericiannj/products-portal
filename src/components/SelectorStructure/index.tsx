@@ -9,20 +9,20 @@ type ISelectorProps = {
 const SelectorStructure: React.FC<ISelectorProps> = ({ label, onChange }) => {
     const options = [
         {
-            value: 'Eletrônico',
-            category: 'Eletrônico',
+            value: 'Eletronic',
+            category: 'Eletronic',
         },
         {
-            value: 'Roupas',
-            category: 'Roupas',
+            value: 'Clothes',
+            category: 'Clothes',
         },
         {
-            value: 'Cosméticos',
-            category: 'Cosméticos',
+            value: 'Cosmetics',
+            category: 'Cosmetics',
         },
         {
-            value: 'Livros',
-            category: 'Livros',
+            value: 'Books',
+            category: 'Books',
         },
     ]
 

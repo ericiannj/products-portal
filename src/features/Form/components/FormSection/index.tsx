@@ -12,7 +12,7 @@ const FormSection: React.FC = () => {
     const [product, setProduct] = useState({
         name: '',
         code: '',
-        category: 'Eletrônico',
+        category: 'Eletronic',
         supplier: '',
         price: '',
     })
@@ -24,15 +24,15 @@ const FormSection: React.FC = () => {
             setProduct({
                 name: '',
                 code: '',
-                category: 'Eletrônico',
+                category: 'Eletronic',
                 supplier: '',
                 price: '',
             })
-            toast.success('Produto registrado!', {
+            toast.success('Registered Product!', {
                 position: toast.POSITION.TOP_CENTER,
             })
         } else {
-            toast.error('O código já está em uso.', {
+            toast.error('The code is already in use.', {
                 position: toast.POSITION.TOP_CENTER,
             })
         }
@@ -44,12 +44,12 @@ const FormSection: React.FC = () => {
                 <FormDataContainer>
                     <NavLink
                         to="products"
-                        linkName="Ver Produtos Cadastrados"
+                        linkName="Registered Products"
                         icon={ProductsIcon}
                     />
-                    <Header placeholder="Cadastre um Novo Produto" />
+                    <Header placeholder="Register a New Product" />
                     <InputStructure
-                        label="Nome do Produto"
+                        label="Product Name"
                         value={product.name}
                         onChange={e =>
                             setProduct(prevState => {
@@ -58,7 +58,7 @@ const FormSection: React.FC = () => {
                         }
                     />
                     <InputStructure
-                        label="Código do Produto"
+                        label="Product Code"
                         value={product.code}
                         onChange={e =>
                             setProduct(prevState => {
@@ -67,7 +67,7 @@ const FormSection: React.FC = () => {
                         }
                     />
                     <SelectorStructure
-                        label="Categoria do Produto"
+                        label="Product Category"
                         onChange={e => {
                             const categoryValue = e.target.value
                             setProduct(prevState => {
@@ -79,7 +79,7 @@ const FormSection: React.FC = () => {
                         }}
                     />
                     <InputStructure
-                        label="Nome do Fornecedor"
+                        label="Product Supplier"
                         value={product.supplier}
                         onChange={e =>
                             setProduct(prevState => {
@@ -91,7 +91,7 @@ const FormSection: React.FC = () => {
                         }
                     />
                     <InputStructure
-                        label="Preço"
+                        label="Price"
                         value={product.price}
                         onChange={e =>
                             setProduct(prevState => {
@@ -100,7 +100,7 @@ const FormSection: React.FC = () => {
                         }
                     />
                     <DefaultButton
-                        content="Cadastrar"
+                        content="Register"
                         onClick={submitProduct}
                         disabled={
                             product.name == '' ||
