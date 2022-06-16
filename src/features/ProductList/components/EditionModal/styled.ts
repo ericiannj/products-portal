@@ -6,7 +6,7 @@ export const ModalContainer = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 30vw;
+    max-width: 30rem;
 `
 
 export const Closeutton = styled.button`

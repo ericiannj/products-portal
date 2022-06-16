@@ -6,7 +6,7 @@ export const FormSectionContainer = styled.div`
     padding: 4rem 3rem;
     border-radius: 0 1rem 1rem 0;
     align-items: center;
-    display: block;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -21,6 +21,7 @@ export const FormSectionContainer = styled.div`
 
 export const FormDataContainer = styled.div`
     width: 35vw;
+    max-width: 25rem;
     padding: 2rem 2rem;
     border-radius: 1rem;
     align-items: center;
